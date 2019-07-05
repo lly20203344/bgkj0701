@@ -45,7 +45,6 @@ export default {
   mounted() {
     this.getDetail();
     this.getDetailTO();
-    this.openFullScreen()
   },
   methods: {
     // 获取三九内经

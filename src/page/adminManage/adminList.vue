@@ -72,6 +72,7 @@
                 };
                 let param = JSON.stringify(data);
                 common.requestAjax(url,param,dataForm,(res)=>{
+                    console.log(res,'admin')
                     this.loading = false;
                     let data = res.data;
                     this.tableData = data.bussData;
