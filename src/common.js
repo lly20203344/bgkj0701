@@ -3,7 +3,6 @@ var Vue = require('vue');
 // Vue.http.options.credentials = true;
 function requestAjax(url,param,dataForm = null,callBack,failBack=null) {
     let sessionId = sessionStorage.getItem('sessionId');
-    console.log(sessionId, 'sessionId')
     let sendUrl = url + '?sessionId=' + sessionId;
     for(let item in dataForm){
         sendUrl = sendUrl + "&" + item + '=' + dataForm[item];

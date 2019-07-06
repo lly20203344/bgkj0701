@@ -32,9 +32,8 @@ Vue.http.interceptors.push(function(request, next) {//拦截器
   request.credentials = false;
   next((res)=>{
     //401 登陆过期跳转
-    console.log(res);
-    if(res.body.status == 401){
-        router.push("/loginPage");
+    if(res.body.code == 401){
+        router.push("/");
     }
   })
 })

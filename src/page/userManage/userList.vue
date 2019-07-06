@@ -115,7 +115,7 @@ export default {
     // let sessionId = sessionStorage.getItem('sessionId');
     // console.log('sessionId',sessionId);
     this.getUserList();
-    this.getGameStatus();
+    // this.getGameStatus();
   },
   methods: {
     getGameStatus() {

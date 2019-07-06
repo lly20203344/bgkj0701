@@ -6,7 +6,6 @@ const host = window.location.host,
       //api = `https://${host}/api/admin/`;
       api = 'https://intest.icebartech.com/api/admin/';
       //api = `http://192.168.2.125:60833/api/admin/`;
-      console.log(host)
 module.exports = {
   //管理员
   ADMIN: {
@@ -17,7 +16,7 @@ module.exports = {
 
     FINDUSERPERMISSIONS:api+'menu/find_list',  // 获取用户拥有的左侧菜单权限
 
-    FINDAPPROLEBYPAGE: api+'role/find_list',   //  分页获取角色列表(权限管理---分页获取)
+    FINDAPPROLEBYPAGE: api+'role/find_page',   //  分页获取角色列表(权限管理---分页获取)
     FINDADMINUSERBYPAGE:api+'user/findAdminUserByPage',  //  分页获取用户列表(管理员列表)
     // SAVEADMINUSER:api+'user/saveAdminUser',   //  保存用户基本信息(管理员列表保存编辑) 
     SAVEADMINUSER:api+'role/insert',   //  

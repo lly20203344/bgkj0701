@@ -44,7 +44,6 @@ export default {
         if(localStorage.menus){
             let menusList=JSON.parse(localStorage.getItem('menus'));
             this.menusList=menusList
-            console.log(this.menusList, 'this.menus')
         }
   },
   methods:{
@@ -53,8 +52,7 @@ export default {
              let param = {'pageIndex':1,'pageSize':10 };
             this.$http.post(url, param, {emulateJSON:true}).then(res => {
                  let data = res.data;
-                 if(data.status == 200){
-                     console.log(data,'data')
+                 if(data.code == 200){
                  }
                  else{
                    

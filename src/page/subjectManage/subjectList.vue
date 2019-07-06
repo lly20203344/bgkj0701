@@ -221,7 +221,7 @@ export default {
     // this.uploadUrl =
     //   CONSTANT.URL.QUESTION.FREIGHTIMPORT + "?sessionId=" + sessionId;
     this.getSubjectList();
-    this.getCategory();
+    // this.getCategory();
   },
   methods: {
     //   题库提交

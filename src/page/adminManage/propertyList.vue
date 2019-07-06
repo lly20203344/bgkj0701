@@ -61,10 +61,12 @@ export default {
         getRoleList:function(){
            let url = CONSTANT.URL.ADMIN.FINDAPPROLEBYPAGE;
            let dataForm = {
+              
+           }
+           let data = {
                pageIndex:this.pageIndex,
                pageSize:this.pageSize
-           }
-           let data = {} ;
+           } ;
            let param = JSON.stringify(data);
            this.loading = true;
            common.requestAjax(url,param,dataForm,(res)=>{
